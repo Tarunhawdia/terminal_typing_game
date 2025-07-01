@@ -10,7 +10,7 @@ A fast-paced terminal typing game where bubbles fall from the top of the screen 
 - Type the correct letter to pop a bubble.
 - If a bubble reaches the bottom, it's counted as a fail.
 - After 5 fails → **Game Over**.
-- Press `q` at any time to quit.
+- Press `Cltr+C` at any time to quit.
 
 ---
 
