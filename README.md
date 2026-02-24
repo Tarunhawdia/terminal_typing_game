@@ -1,16 +1,17 @@
-# ⌨️ Typing Bubble Game (Terminal Edition)
+# ⌨️ Terminal Typing Game
 
-A fast-paced terminal typing game where bubbles fall from the top of the screen and you must type their letters to pop them before they hit the bottom. Miss 5 and it's game over.
+A fast-paced, colorful terminal typing game where bubbles fall from the top of the screen. You must type their respective characters to pop them before they hit the bottom! The longer you play, the harder it gets.
 
 ---
 
-## 🎮 Gameplay
+## 🎮 Gameplay Features
 
-- Bubbles with random letters fall from the top.
-- Type the correct letter to pop a bubble.
-- If a bubble reaches the bottom, it's counted as a fail.
-- After 5 fails → **Game Over**.
-- Press `Cltr+C` at any time to quit.
+- **Falling Bubbles**: Bubbles containing random characters (a-z, A-Z, 0-9) fall from the top of your terminal.
+- **Score & Streak System**: Popping a bubble earns you points. Consecutive pops build a streak that gives you bonus points! A single miss resets your streak.
+- **Dynamic Difficulty (Levels)**: Every 150 points, you level up. The game speeds up, with bubbles spawning faster and falling quicker.
+- **Lives System**: You start with 5 lives (❤️). Letting a bubble reach the bottom costs a life and causes the screen to flash red. When you hit 0 lives, it's Game Over.
+- **Colorful UI**: Bubbles spawn in vibrant ANSI colors. A status bar at the bottom cleanly tracks your Progress, Score, Lives, Level, and Streak.
+- **Clean Exit**: Press `Esc` or `Ctrl+C` at any time to safely exit and restore your terminal cursor.
 
 ---
 
@@ -19,13 +20,25 @@ A fast-paced terminal typing game where bubbles fall from the top of the screen 
 ### ✅ Prerequisites
 
 - [Go](https://golang.org/dl/) 1.17+
-- Terminal that supports ANSI escape codes (most do)
+- A terminal that supports ANSI escape codes (most modern terminals do).
 
-### 🛠 Setup
+### 🛠 Setup & Run
 
-```bash
-git clone https://github.com/yourusername/typing-bubble-game.git
-cd typing-bubble-game
-go mod init typing-bubble-game
-go get golang.org/x/term
-go run main.go
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/terminal_typing_game.git
+   cd terminal_typing_game
+   ```
+
+2. To run the game directly:
+   ```bash
+   go run main.go
+   ```
+
+3. To build the executable:
+   ```bash
+   go build -o terminal_typing_game
+   ./terminal_typing_game
+   ```
+
+Enjoy the game, and try to beat your high score!
